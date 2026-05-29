@@ -29,3 +29,7 @@ jobs:
       - name: Build Docker Image
         run: | 
           docker build -t fastapi-todo .
+
+      - name: Run Tests
+        run: | 
+          pytest
